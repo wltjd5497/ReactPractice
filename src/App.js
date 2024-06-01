@@ -36,17 +36,17 @@ function App() {
           copy[0] = '여자 코트 추천';
           글제목변경(copy);
         }}>👩</span> </h4>
-        <p>2월 17일 발행</p>
+        <Date></Date>
       </div>
 
       <div className='list'>
         <h4>{ 글제목[1] }</h4>
-        <p>2월 17일 발행</p>
+        <Date></Date>
       </div>
 
       <div className='list'>
         <h4>{ 글제목[2] }</h4>
-        <p>2월 17일 발행</p>
+        <Date></Date>
       </div>
 
       <Modal></Modal>
@@ -54,6 +54,12 @@ function App() {
     </div> // end of Root
   );
 } // end of App()
+
+function Date(str){
+  return(
+    <p>2월 17일 발행</p>
+  )
+}
 
 function Modal(){ // 다른 function 바깥에 만들고, 함수 이름은 대문자로 시작
 
