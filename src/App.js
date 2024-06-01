@@ -24,6 +24,12 @@ function App() {
         <h4 id = { test } style={{color:'red', fontSize: '16px'}}>{logo}</h4> 
       </div>
 
+      <button onClick={()=>{
+        let copy = [...글제목]; // 글제목 배열의 사본을 만든다.
+        copy.sort();
+        글제목변경(copy);
+      }}>가나다순 정렬</button>
+
       <div className='list'>
         <h4>{ 글제목[0] } <span onClick = {() => { 따봉변경(따봉+1) }}>👍</span> { 따봉 } <span onClick={()=>{
           let copy = [...글제목];
