@@ -48,10 +48,22 @@ function App() {
         <h4>{ 글제목[2] }</h4>
         <p>2월 17일 발행</p>
       </div>
-    </div>
 
-    
+      <Modal></Modal>
+
+    </div> // end of Root
   );
+} // end of App()
+
+function Modal(){ // 다른 function 바깥에 만들고, 함수 이름은 대문자로 시작
+
+  return(
+    <div className='modal'>
+    <h4>제목</h4>
+    <p>날짜</p>
+    <p>상세내용</p>
+  </div>
+  ) // return() 안에 코드 짤 때에는 하나의 루트로 이루어져야 한다.
 }
 
 export default App;
